@@ -139,7 +139,7 @@ static const int GRID_COLUMNS = 10;
     int numAlive = 0;
     
     for (int i=0; i < [_gridArray count ]; i++) {
-        for (int j=0; j < [_gridArray[i] count]; J++) {
+        for (int j=0; j < [_gridArray[i] count]; j++) {
             Creature *currentCreature = _gridArray[i][j];
             
             for (int x = (i-1); x <= (i+1); x++) {

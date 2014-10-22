@@ -138,10 +138,8 @@ static const int GRID_COLUMNS = 10;
 -(void)updateCreatures {
     int numAlive = 0;
     
-    NSLog(@"Aqui");
-    
-    for (int i=0; i < _gridArray.count; i++) {
-        for (int j=0; j < [_gridArray[i] count]; i++) {
+    for (int i=0; i < [_gridArray count ]; i++) {
+        for (int j=0; j < [_gridArray[i] count]; J++) {
             Creature *currentCreature = _gridArray[i][j];
             
             for (int x = (i-1); x <= (i+1); x++) {
